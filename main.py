@@ -15,7 +15,7 @@ import json
 import telebot, os
 from telebot import types
 
-bot = telebot.TeleBot("TOKEN")
+bot = telebot.TeleBot("6303392772:AAH_S0SMHoN5xt3vFyCEb728mwuSm8UgUDc")
 devUrl = types.InlineKeyboardButton(text="Mr. X - المطور",  url="https://t.me/linux_nerd")
 foss = "This bot is foss, you can find the source code on https://github.com/n30mrx/archwikibot"
 
