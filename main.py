@@ -11,11 +11,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 import requests
-import json
-import telebot, os
+import telebot
 from telebot import types
 
-bot = telebot.TeleBot("6303392772:AAHdHxNS-_KC78A-_ZpPc1y0yidv17viu1U")
+bot = telebot.TeleBot("TOKEN")
 devUrl = types.InlineKeyboardButton(text="Mr. X - المطور",  url="https://t.me/linux_nerd")
 foss = "This bot is foss, you can find the source code on https://github.com/n30mrx/archwikibot"
 
