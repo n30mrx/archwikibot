@@ -11,19 +11,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 import requests
-import json
-import telebot, os
+import telebot
 from telebot import types
 
-bot = telebot.TeleBot("6303392772:AAH_S0SMHoN5xt3vFyCEb728mwuSm8UgUDc")
+bot = telebot.TeleBot("TOKEN")
 devUrl = types.InlineKeyboardButton(text="Mr. X - المطور",  url="https://t.me/linux_nerd")
 foss = "This bot is foss, you can find the source code on https://github.com/n30mrx/archwikibot"
 
 @bot.message_handler(commands=['start'])
 def start(message):
     myKey  = types.InlineKeyboardMarkup(row_width=3)
-    useBot = types.InlineKeyboardButton(text="Use bot - استعمل البوت", switch_inline_query_chosen_chat="")
+    useBot = types.InlineKeyboardButton(text="استعمال البوت - use the bot", switch_inline_query_current_chat="")
     myKey.add(devUrl)
+    myKey.add(useBot)
     bot.send_message(message.chat.id,"Hey! this is an inline bot used to search through the arch wiki :)\njust mention the bot and type your query, then choose a result!", reply_markup=myKey)
     
 
